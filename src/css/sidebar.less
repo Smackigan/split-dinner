@@ -1,0 +1,52 @@
+// main: ../styles.less
+
+.sidebar ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}
+
+.sidebar li {
+	display: grid;
+	grid-template-columns: 4.8rem 1fr auto;
+	align-items: center;
+	column-gap: 1.6rem;
+
+	padding: 1.2rem;
+	border-radius: 7px;
+	transition: 0.5s;
+}
+
+.selected,
+.sidebar li:hover {
+	background-color: @color-lightest;
+}
+
+.sidebar li img {
+	border-radius: 50%;
+	width: 100%;
+	grid-row: span 2;
+}
+
+.sidebar li h3 {
+	grid-row: 1;
+	grid-column: 2;
+}
+
+.sidebar li p {
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.sidebar li .button {
+	grid-row: span 2;
+	grid-column: 3;
+}
+
+.sidebar > .button {
+	float: right;
+	margin-right: 1.2rem;
+}

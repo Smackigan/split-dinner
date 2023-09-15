@@ -1,0 +1,52 @@
+// compress: false
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'css/vars.less';
+@import 'css/sidebar.less';
+@import 'css/add_form.less';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+	/* height: 100vh; */
+	color: #495057;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button {
+	background-color: @color-medium;
+	color: #343a40;
+	padding: 0.8rem 1.2rem;
+	border: none;
+	border-radius: 7px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button:hover {
+	background-color: @color-dark;
+}
+
+.green {
+	color: #66a80f;
+}
+
+.red {
+	color: #e03131;
+}
